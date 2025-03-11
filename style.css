@@ -8,9 +8,14 @@ h1{
     text-align:center;
 }
 
+#content{
+    width:65%;
+    margin:auto;
+}
+
 body{
     background-color: #abd9e9 ;
-    color:#ca0020;
+    color:midnightblue;
     font-family: Redonda;
 }
 

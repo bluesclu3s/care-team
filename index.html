@@ -15,19 +15,42 @@
             <p>I first received the budget data from the MIL team. Data was found from budget recommendations created by the City of Chicago Office of Budget and Management, which are available to the public. I made a spreadsheet of all the numbers and decided on using a stacked line chart to show this data. When I put the numbers into Flourish, I realized they were adding all the numbers up (due to its stacked nature). In the original excel spreadsheet, I made sure to get the mental health services budget by subtracting the care budget and the total behavioral health budget by subtracting the mental health services budget. This way, when added up, there wouldn’t be any redundancy and the graph would show accurate numbers. I added the source and credit, as well as made sure the design was accessible (screenreader, colorblind safe colors.)
             </p>
         </details>
-        <h2>2. title</h2>
+        <h2>2. CARE versus total mental/behavioral health funding for 2025</h2>
         <div class="flourish-embed flourish-chart" data-src="visualisation/21968337"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21968337/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
-
         <details>
             <summary>Methodology</summary>
         
             <p></p>
         </details>
-        <h2>3. title</h2>
+        <h2>3. Chicago spending on mental/behavioral health vs police</h2>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/22052857"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/22052857/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+        <details>
+            <summary>Methodology</summary>
         
-        <h2>4. title</h2>
-        <h2>5. title</h2>
-        <h2>6. title</h2>
-
+            <p>I received data from the MIL team — the three important data points are the total department of public health spending, CARE spending, and mental health services spending. CARE numbers were from the 2025 appropriations ordinance; the other two from the 2025 budget overview. In terms of processing – an example can be seen in the Pie Chart - CARE vs. Total Dept. of Public Health tab in this sheet. The three original numbers fall under the types “Mental health services total”, “CARE”, and “Dept of Public Health total”. I created another type of funding - “All other spending”, and calculated it as the portion of the total department budget not accounted for (formula: =B3 - (B2 + B4)). I did the same for “mental health services total” – I created a new type called “All other mental health services” and calculated it as the difference between the total spending on mental health services and CARE (formula:  =B2 - B5). I didn’t include the Mental health services total row in my flourish visualization. I also calculated the percentage of total (column: “Percentage”) (formula: =B2/$B$3).  I didn’t include the department of public health total row in my flourish visualization. In terms of how I put the data into Flourish: I set the Labels/Time to be column A (Type), Values as Amount (Column B), and Info for Custom Popups to be C (Amount as percentage). I changed the colors so that All other mental health services was blue, All other spending was gray, and CARE was orange. I added a legend. I created custom popups that display both the amount and percentage spent, with the title set as “Type” (of spending). I then added a header and footer, along with a screenreader description. 
+            </p>
+        </details>
+        <h2>4. Breakdown of types of CARE staff</h2>
+        <div class="flourish-embed flourish-pictogram" data-src="visualisation/21967760"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21967760/thumbnail" width="100%" alt="pictogram visualization" /></noscript></div>
+        <details>
+            <summary>Methodology</summary>
+        
+            <p>The CARE staff numbers came from the “CARE_Staff_info_FOIA” spreadsheet, and I looked at the 2024 total numbers to see that there were 23 CARE staff members. I used the roster obtained by FOIA by Emma Sullivan to get the number of police officers trained in the Crisis Intervention Team (CIT). As it is in PDF form, I counted the number of names in a full page, coming out to 47, and multiplied that by the number of full pages in the PDF, which was 53. Then, I counted the number of names on the first page (46), which is not full due to the line for the column header, and the number of names on the last page (27), which was not full. I added these two numbers to the product I calculated earlier to get 2564 CIT-trained officers. Putting this into Flourish involved 
+            </p>
+        </details>
+        <h2>5. Number of CIT-trained officers versus number of CARE staff</h2>
+        <div class="flourish-embed flourish-pictogram" data-src="visualisation/21966949"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21966949/thumbnail" width="100%" alt="pictogram visualization" /></noscript></div>
+        <details>
+            <summary>Methodology</summary>
+        
+            <p>The 2023 staffing data came from the “Historical Staffing” tab of the “CARE_Staff_info_FOIA” spreadsheet. I input the employee positions and number employed into a new spreadsheet. I didn’t have any salary info to add in for 2023. The 2024 and 2025 data came from the “2024-2025 total” tab of that same spreadsheet. For 2024, I used the data in the “2024 Total” column. However, I added the “Sr. Director of Crisis Services” position because that was unlisted but clearly a filled position as indicated on another tab of the spreadsheet and on LinkedIn. I did the same for the 2025 data, using the “Currently Filled” column. I input the new dataset into Flourish using the Stacked Bars template. Under chart settings, I switched the direction to horizontal for better visibility. Under colors, I created a set of custom overrides that are colorblind safe for accessibility purposes. I also added a legend, header and footer, source info and screenreader description. 
+            </p>
+        </details>
+        <h2>6. Map of city-owned mental health clinics</h2>
+        <details>
+            <summary>Methodology</summary>
+        
+            <p></p>
+        </details>
     </div>
 </body>
