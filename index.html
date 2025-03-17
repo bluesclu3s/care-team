@@ -69,10 +69,26 @@
             </p>
         </details>
         <h2>6. Map of city-owned mental health clinics and racial demographics</h2>
+        <div class="flourish-embed flourish-map" data-src="visualisation/21967848"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21967848/thumbnail" width="100%" alt="map visualization" /></noscript></div>
         <details>
             <summary>Methodology</summary>
         
-            <p></p>
+            <p>My data came from 
+                <a href="censusreporter.org">censusreporter.org</a>, 
+                the 
+                <a href="https://www.chicago.gov/city/en/depts/cdph/supp_info/behavioral-health/mental_health_centers.html">Chicago Department of Public Health</a>, the
+                <a href="https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-ZIP-Codes/unjd-c2ca/about_data">City of Chicago Data Portal</a>, and 
+                <a href="https://chirecoveryplan.com/geography/60666/#race-ethnicity">Chicago Recovery Plan</a>. 
+                I created a Projection Map on Flourish and then input the geojson data of Chicago ZIP codes from the Chicago Data Portal into the regions geometry section of the data on Flourish. I then created a “Chicago Mental Health Clinics” 
+                <a href="https://docs.google.com/spreadsheets/u/0/d/1FIc7rM4g_0fIQVmhBREV4CRW_XPchEzGVQgod31OqcA/edit">spreadsheet</a> 
+                with the names of all 7 Mental Health Centers, and input their corresponding addresses using information from the Chicago Department of Public Health in a column. I used a lat-long generator to find the latitudinal and longitudinal coordinates of each location, and created a column for each of these. I then uploaded this spreadsheet into the points section of data on Flourish projection map. I included the address of the mental health center in the popup for each location. I then created another 
+                <a href="https://docs.google.com/spreadsheets/u/0/d/1ahc5ai8H-L3Zza59R0pUQBQigODT46yUL-Vm5xt9MfA/edit">spreadsheet</a>
+                called “Zip Code Demographics” and listed out each Chicago zip code in the first column. Using the data from 
+                <a href= "https://censusreporter.org/data/table/?table=B03002&geo_ids=16000US1714000,05000US17031,31000US16980,04000US17,01000US,860|16000US1714000&primary_geo_id=16000US1714000">Census Reporter</a>, 
+                I found the majority race and percentage of majority for each ZIP Code, and created a column for each of these. I found information for the ZIP Code 60666 from the 
+                <a href="https://chirecoveryplan.com/geography/60666/#race-ethnicity">Chicago Recovery Plan</a>,
+                because it was not included on the Census Reporter data. I uploaded this into the regions section of data on Flourish. I made the visualization color by the Majority Race column, and put the percentage into information for popups. I edited the colors to be consistent with the rest of our visualizations. I edited the popup labels to include the ZIP Code as the title, and included the Majority Race and Percentage Majority Race. Finally, I linked all of my data as sources in the footer of the map.
+            </p>
         </details>
     </div>
 </body>
