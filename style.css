@@ -5,7 +5,7 @@ html{
 h1{
     font-family: Pressio;
     font-size: 70;
-    text-align:center;
+    text-align:center;    
 }
 
 #content{
@@ -20,7 +20,7 @@ body{
 }
 
 p{
-    background-color: white;
+    background-color:aliceblue;
     padding: 10;
 }
 
